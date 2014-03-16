@@ -39,6 +39,11 @@ if [[ -f "$HOME/.nenv/nenv.sh" ]]; then
 fi
 ```
 
+If you would like to automatically activate and deactivate virtual envrionments
+as you `cd` into them and out of them, just uncomment the `alias cd="nenv_cd"` 
+line in the code above. Also, if you'd like to activate an environment when 
+creating a new shell session, just uncomment the `nenv actiavate` line as well.
+
 ### Usage
 
 A virtual environment is any directory that contains a node_modules directory
