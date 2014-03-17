@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# My thanks to Creationix. This script is almost a verbatim copy of 
+# the install script for NVM (https://github.com/creationix/nvm).
 
 NENV_DIR="$HOME/.nenv"
 GITHUB_REPO_URL="https://github.com/croach/nenv.git"
