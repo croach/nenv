@@ -1,4 +1,4 @@
-# Dead simple virtual environments for Node
+# Virtual Environment Manager for Node
 
 nenv is a simple virtual environment manager for Node. In short, it adds
 exectuables for locally installed node modules to the current PATH so
