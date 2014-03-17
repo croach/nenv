@@ -8,6 +8,27 @@ further modification of the virtual environment.
 
 ### Installation
 
+#### Install script
+
+To install, run the following line if you use curl:
+
+```
+curl https://raw.github.com/croach/nenv/master/install.sh | sh
+```
+
+or this line if you use wget:
+
+```
+wget -qO- https://raw.github.com/croach/nenv/master/install.sh | sh
+```
+
+> NOTE: The script will clone this repository (or curl the nenv.sh file) into 
+~/.nenv and add a few lines to source the file into your .zshrc, .bashrc, or 
+.profile file depending on which it finds first. If `nenv` does not work for
+you after you install it, make sure the source lines are in the correct file.
+
+#### Manual install 
+
 To install nenv, if you have git installed, just clone this repository.
 
 ```bash
@@ -83,39 +104,3 @@ teardown functionality as well. if a `.activate` file is found in the directory,
 it will source it when the virtual environment is activated. Likewise, if a
 `.deactivate` file is found, it will source it upon deactivation. These files
 allow you to do extra setup/teardown to your environment as needed.
-
-<<<<<<< Updated upstream
-=======
-Simple virtual environments for Node.
-
-A set of bash/zsh functions that provide simple virtual environment
-capabilities for node. To install, just copy this file into your home
-directory and add the following to your .bashrc or .zshrc file:
-
-if [[ -f "$HOME/.nenv" ]]; then
-    source "$HOME/.nenv"
-
-    # Uncomment the following line if you want virtual environments
-    # activated/deactivted as you cd into/out of them.
-    # alias cd="nenv_cd"
-
-    # Uncomment the following line if you want to try to check for a
-    # virtual environment in the current directory (and activate it)
-    # whenever a new shell session is created.
-    # nenv activate
-fi
-
-This script provides a new function called nenv that can be used to activtate
-and deactivate virtual environments. A virtual environment is any directory
-that contains a node_modules directory within it. To activate a virtual
-environment, simply cd into it and call the 'nenv activate' command. This
-will check the current directory for a node_modules directory and place the
-bin folder within into the current PATH variable. To return the PATH variable
-back to its original state simply call the 'nenv deactivate' command.
-
-In addition to altering the PATH variable, nenv also supports setup and
-teardown functionality as well. if a .activate file is found in the directory,
-it will source it when the virtual environment is activated. Likewise, if a
-.deactivate file is found, it will source it upon deactivation. These files
-allow you to do extra setup/teardown to your environment as needed.
->>>>>>> Stashed changes
