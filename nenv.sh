@@ -3,20 +3,20 @@
 # A set of bash/zsh functions that provide simple virtual environment
 # capabilities for node. To install, just copy this file into your home
 # directory and add the following to your .bashrc or .zshrc file:
-#
-# if [[ -f "$HOME/.nenv" ]]; then
-#     source "$HOME/.nenv"
-#
+
+# if [[ -f "$HOME/.nenv/nenv.sh" ]]; then
+#     source "$HOME/.nenv/nenv.sh"
+
 #     # Uncomment the following line if you want virtual environments
 #     # activated/deactivted as you cd into/out of them.
 #     # alias cd="nenv_cd"
-#
+
 #     # Uncomment the following line if you want to try to check for a
 #     # virtual environment in the current directory (and activate it)
 #     # whenever a new shell session is created.
 #     # nenv activate
 # fi
-#
+
 # This script provides a new function called nenv that can be used to activtate
 # and deactivate virtual environments. A virtual environment is any directory
 # that contains a node_modules directory within it. To activate a virtual
@@ -24,7 +24,7 @@
 # will check the current directory for a node_modules directory and place the
 # bin folder within into the current PATH variable. To return the PATH variable
 # back to its original state simply call the 'nenv deactivate' command.
-#
+
 # In addition to altering the PATH variable, nenv also supports setup and
 # teardown functionality as well. if a .activate file is found in the directory,
 # it will source it when the virtual environment is activated. Likewise, if a
